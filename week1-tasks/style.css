@@ -14,9 +14,21 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url('https://wallpapercrafter.com/desktop/250675-outdoor-cloud-calm-and-weather-hd.jpg');
+ /* Sunny background */
     background-size: cover;
+    transition: background 1s ease; /* Smooth transition */
+    background: linear-gradient(to top, #2c3e50, #4b004b); /* Dark purple gradient */
 }
+
+.container.default{
+    background: linear-gradient(to top, #2c3e50, #4b004b); /* Dark purple gradient */
+        
+}
+
+
+
+
+
 
 
 .container
@@ -27,11 +39,40 @@ body{
     background: rgba(255,255, 255, 0.1);
     border-radius: 16px;
     padding: 20px;
+    background: linear-gradient(to top, #2c3e50, #4b004b); /* Dark purple gradient */
     backdrop-filter:blur(20px) ;
     color: aliceblue;
     /* border: 2px solid rgba(255, 255, 255, 0.1); */
 
 }
+
+
+.container.clear {
+    background: linear-gradient(to top, #f7b733, #fc4a1a); /* Sunny background */
+}
+
+.container.rain {
+    background: linear-gradient(to top, #4b79a1, #283e51); /* Rainy background */
+}
+
+.container.snow {
+    background: linear-gradient(to top, #83a4d4, #b6fbff); /* Snowy background */
+}
+
+.container.clouds {
+    background: linear-gradient(to top, #2c3e50, #bdc3c7); /* Cloudy background */
+}
+
+.container.mist {
+    background: linear-gradient(to top, #d3cce3, #e9e4f0); /* Misty background */
+}
+
+.container.haze {
+    background: linear-gradient(to top, #d3cce3, #e9e4f0); /* Hazy background */
+}
+
+
+
 
 
 .container1
@@ -44,7 +85,7 @@ body{
     background: rgba(255,255, 255, 0.1);
     border-radius: 16px;
     padding: 20px;
-    backdrop-filter:blur(20px) ;
+    backdrop-filter:blur(20%) ;
     color: aliceblue;
 
     /* border: 2px solid rgba(255, 255, 255, 0.1); */
@@ -133,7 +174,7 @@ body{
 .weather-box
 {
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .weather-box .temperature

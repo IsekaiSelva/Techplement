@@ -256,6 +256,8 @@ const getWeather = () => {
             cityName.innerHTML = `${city}`; // Set city name
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)} Km/h`;
+
+            searchInput.value = '';
         });
 };
 
